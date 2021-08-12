@@ -36,9 +36,6 @@
         </svg>
         <header class="pageHeader">
             <nav>
-                <a href="/" class="logo">
-                    <img src="/home/hshc-humanscale-healthcare-logo.svg" />
-                </a>
                 <ul class="menu">
                     <li class="menuHeader">
                         <h3>Pages</h3>
@@ -60,7 +57,15 @@
                         </button>
                     </li>
                     <li>
-                        <button class="collapse">
+                        <button onclick="location.href='/deviceState';">
+                            <svg>
+                                <use xlink:href="#comments"></use>
+                            </svg>
+                            <span>Comments</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="collapse" aria-expanded="true" aria-label="collapse menu">
                             <svg aria-hidden="true">
                                 <use xlink:href="#collapse"></use>
                             </svg>
@@ -71,59 +76,8 @@
             </nav>
         </header>
         <section class="pageContent">
-            <section class="searchAndUser">
-                <form autocomplete="off" onsubmit="return false">
-                    <div class="autocomplete">
-                        <input type="text" placeholder="Search for Cart..." id="query" name="cartNum">
-                        <button aria-label="submit form" onclick="requestXML()" id="cartSearchButton">
-                            <svg aria-hidden="true">
-                                <use xlink:href="#search"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-
-                <div class="profile">
-                    <span class="greeting"></span>
-                    <label for="file">
-                        <i class="fa fa-upload" style="font-size:36px; cursor:pointer"></i>
-                    </label>
-                    
-                    <input type="file" id="file" accept=".xml">
-                </div>
-            </section>
-
             <section class="grid">
-                <article id="DeviceState">
-                    <div id="powerSystem">
-                        <h2>Device State</h2>
-                    </div>
-                    <div id="warning">
-                        <h3>Warnings</h3>
-                    </div>
-                <!--    <div id="secondBattery">
-                        <h3>Second Battery</h3>
-                    </div>
-                    <div id="bridgeBattery">
-                        <h3>Bridge Battery</h3>
-                    </div> -->
-                </article>
-                <article id="mainBattery">
-                    <div id="mainBat">
-                        <h2>Main Battery</h2>
-                    </div>
-                </article>
-                <article id="Lifter">
-                    <div id="lifterActuation">
-                        <h2>Lifter/Actuation</h2>
-                    </div>
-                </article>
-                <article id=""></article>
-                <article id="Settings">
-                    <div id="deviceSettings">
-                        <h2>Cart Settings</h2>
-                    </div>
-                </article>
+                
             </section>
         </section>
         <script src="index_script.js"></script>

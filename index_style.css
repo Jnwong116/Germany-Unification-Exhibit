@@ -15,10 +15,6 @@
     --red: #ec1848;
     --border-radius: 4px;
     --box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
-    --switch-bgLightModeColor: #87cefa;
-    --switch-sunColor: gold;
-    --switch-moonColor: #f4f4f4;
-    --switch-bgDarkModeColor: #1f1f27;
 }
 
 * {
@@ -47,6 +43,32 @@ svg {
 
 body {
     font: 16px/1.5 "Lato", sans-serif;
+}
+
+/* Collapse */
+@media screen and (min-width: 768px) {
+    .collapsed .pageHeader {
+        width: 40px;
+    }
+
+    .collapsed .pageHeader .logo,
+    .collapsed .pageHeader .menu span,
+    .collapsed .pageHeader .menu .menuHeader {
+        display: none;
+    }
+
+    .collapsed .pageHeader .menu svg {
+        margin-right: 10px;
+    }
+
+    .collapsed .pageHeader .collapse svg {
+        transform: rotate(180deg);
+    }
+
+    .collapsed .pageContent {
+        left: 40px;
+        width: calc(100% - 40px);
+    }
 }
 
 /* Header 
