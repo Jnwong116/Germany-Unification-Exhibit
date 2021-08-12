@@ -76,6 +76,19 @@
             </nav>
         </header>
         <section class="pageContent">
+            <section class="searchAndUser">
+                <form autocomplete="off" onsubmit="return false">
+                    <div class="autocomplete">
+                        <input type="text" placeholder="Search for Date..." id="query" name="date">
+                        <button aria-label="submit form" onclick="requestXML()" id="searchButton">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </section>
+            
             <section class="grid">
                 
             </section>

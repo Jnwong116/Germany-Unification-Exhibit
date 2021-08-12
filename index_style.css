@@ -170,6 +170,8 @@ body {
 
 .searchAndUser form {
     position: relative;
+    width: 30%;
+    left: 65%;
 }
 
 #file {
