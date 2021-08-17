@@ -77,6 +77,20 @@
         </header>
         <section class="pageContent">
             <section class="searchAndUser">
+                <div class="date">
+                    <button class="dateBackButton">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#collapse"></use>
+                        </svg>
+                    </button>
+                    <h3 id="dateDisplay">Temp</h3>
+                    <button class="dateForwardButton">
+                        <svg aria-hidden="true">
+                            <use xlink:href="#collapse"></use>
+                        </svg>
+                    <button>
+                </div>
+
                 <form autocomplete="off" onsubmit="return false">
                     <div class="autocomplete">
                         <input type="text" placeholder="Search for Date..." id="query" name="date">
@@ -89,8 +103,8 @@
                 </form>
             </section>
             
-            <section class="grid">
-                
+            <section class="background">
+                <img src="German Map Before.svg" class="map">
             </section>
         </section>
         <script src="index_script.js"></script>

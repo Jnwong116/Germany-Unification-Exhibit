@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
 :root {
-    --page-header-bgColor: #FFFFFF;
-    --page-header-bgColor-hover: #3395C7;
-    --page-header-txtColor: #404040;
-    --page-header-headingColor: #3395C7;
+    --page-header-bgColor: #404040;
+    --page-header-bgColor-hover: #dd0000;
+    --page-header-txtColor: #ffce00;
+    --page-header-headingColor: #dd0000;
     --page-header-width: 220px;
     --page-content-bgColor: #F8F8F8;
     --page-content-txtColor: #404040;
@@ -159,10 +159,16 @@ body {
     background: var(--page-content-bgColor);
 }
 
+.background {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 110px);
+}
+
+/* Search Bar
+------------------------------- */
 .searchAndUser {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-column-gap: 50px;
+    display: flex;
     align-items: center;
     background: var(--page-content-bgColor);
     margin-bottom: 30px;
@@ -171,11 +177,7 @@ body {
 .searchAndUser form {
     position: relative;
     width: 30%;
-    left: 65%;
-}
-
-#file {
-    display: none;
+    left: 15%;
 }
 
 .searchAndUser form button {
@@ -236,64 +238,29 @@ body {
     color: #ffffff;
 }
 
-.searchAndUser .profile {
+/* Map
+----------------- */
+.map {
+    height: 100%;
+}
+
+/* Date Display
+-------------------------------- */
+.date svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--page-header-txtColor);
+    margin-right: 10px;
+}
+
+.date {
+    position: relative;
+    width: 25%;
     display: flex;
     align-items: center;
+    left: 15%;
 }
 
-.searchAndUser .profile .greeting {
-    margin: 0 10px 0 20px;
-}
-
-.pageContent .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-}
-
-
-.pageContent .grid article:first-child {
-    grid-column: 1 / -1;
-}
-
-.pageContent .grid article {
-    display: flex;
-    height: 300px;
-    position: relative;
-    background: var(--page-content-blockColor);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-}
-
-/* Tiles
-------------------------------- */
-.pageContent .grid article div {
-    position: absolute;
-    top: 3%;
-    left: 2%;
-    line-height: 1.75rem;
-}
-
-#powerSystem {
-    position: absolute;
-    top: 2%;
-    left: 1%;
-}
-
-#warning {
-    position: absolute;
-    left: 51%;
-    top: 2%;
-}
-
-#secondBattery {
-    position: absolute;
-    left: 50%;
-    top: 47%;
-}
-
-#bridgeBattery {
-    position: absolute;
-    left: 1%;
-    top: 47%;
+.dateForwardButton {
+    transform: rotate(180deg);
 }

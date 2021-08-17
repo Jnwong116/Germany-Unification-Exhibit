@@ -5,6 +5,8 @@ const collapsedClass = "collapsed";
 const form = document.getElementById('query');
 const searchButton = document.getElementById('searchButton');
 
+const dateDisplay = document.getElementById('dateDisplay');
+
 var dates = [];
 
 
