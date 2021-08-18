@@ -1,26 +1,12 @@
-const body = document.body;
-const collapseButton = document.querySelector(".menu .collapse");
-const collapsedClass = "collapsed";
-
 const form = document.getElementById('query');
 const searchButton = document.getElementById('searchButton');
 
+const map = document.getElementById('map');
+
 const dateDisplay = document.getElementById('dateDisplay');
 
-var dates = [];
-
-
-
-
-collapseButton.addEventListener("click", function() {
-    body.classList.toggle(collapsedClass);
-    this.getAttribute("aria-expanded") == "true"
-    ? this.setAttribute("aria-expanded", "false")
-    : this.setAttribute("aria-expanded", "true");
-  this.getAttribute("aria-label") == "collapse menu"
-    ? this.setAttribute("aria-label", "expand menu")
-    : this.setAttribute("aria-label", "collapse menu");
-});
+var dates = ["April, 1861", "April, 1866", "May, 1866", "July 3, 1866", "July 5, 1866", "December, 1866"];
+var dateIndex = 0;
 
 function autocomplete(inp, arr, button) {
   var currentFocus;
@@ -160,4 +146,29 @@ function autocomplete(inp, arr, button) {
   });
 }
 
+function dateChange(direction) {
+    if (direction == 'back') {
+        if (dateIndex != 0) {
+            dateIndex -= 1;
+            dateDisplay.innerHTML = dates[dateIndex];
+        }
+    }
+
+    else if (direction == 'forward') {
+        if (dateIndex != dates.length - 1) {
+            dateIndex += 1;
+            dateDisplay.innerHTML = dates[dateIndex];
+        } 
+    }
+
+    if (dateIndex > 4) {
+        map.src = 'Germany_Map_After.png';
+    }
+
+    if (dateIndex <= 4) {
+        map.src = 'German Map Before.svg';
+    }
+}
+
 autocomplete(form, dates, searchButton);
+dateDisplay.innerHTML = dates[dateIndex];

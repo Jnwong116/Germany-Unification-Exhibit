@@ -6,6 +6,8 @@
 
         <link href="index_style.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
     </head>
     <body>
         <svg style="display: none;">
@@ -38,14 +40,14 @@
             <nav>
                 <ul class="menu">
                     <li class="menuHeader">
-                        <h3>Pages</h3>
+                        <h3>Sources</h3>
                     </li>
                     <li>
                         <button onclick="location.href='/deviceState';">
                             <svg>
                                 <use xlink:href="#pages"></use>
                             </svg>
-                            <span>Sources</span>
+                            <span>Source 1</span>
                         </button>
                     </li>
                     <li>
@@ -64,27 +66,19 @@
                             <span>Comments</span>
                         </button>
                     </li>
-                    <li>
-                        <button class="collapse" aria-expanded="true" aria-label="collapse menu">
-                            <svg aria-hidden="true">
-                                <use xlink:href="#collapse"></use>
-                            </svg>
-                            <span>Collapse</span>
-                        </button>
-                    </li>
                 </ul>
             </nav>
         </header>
         <section class="pageContent">
             <section class="searchAndUser">
                 <div class="date">
-                    <button class="dateBackButton">
+                    <button class="dateBackButton" onclick="dateChange('back')">
                         <svg aria-hidden="true">
                             <use xlink:href="#collapse"></use>
                         </svg>
                     </button>
                     <h3 id="dateDisplay">Temp</h3>
-                    <button class="dateForwardButton">
+                    <button class="dateForwardButton" onclick="dateChange('forward')">
                         <svg aria-hidden="true">
                             <use xlink:href="#collapse"></use>
                         </svg>
@@ -103,10 +97,15 @@
                 </form>
             </section>
             
-            <section class="background">
-                <img src="German Map Before.svg" class="map">
-            </section>
+            <div id="background">
+                <img src="German Map Before.svg" id="map" />
+            </div>
+
         </section>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="map_jquery.js"></script>
+
         <script src="index_script.js"></script>
     </body>
 </html>

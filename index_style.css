@@ -6,13 +6,12 @@
     --page-header-txtColor: #ffce00;
     --page-header-headingColor: #dd0000;
     --page-header-width: 220px;
-    --page-content-bgColor: #F8F8F8;
+    --page-content-bgColor: #5a5a5a;
     --page-content-txtColor: #404040;
     --page-content-blockColor: #fff;
-    --white: #FFFFFF;
-    --black: #333;
-    --blue: #3395C7;
-    --red: #ec1848;
+    --gold: #ffce00;
+    --black: #404040;
+    --red: #dd0000;
     --border-radius: 4px;
     --box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.075);
 }
@@ -43,32 +42,6 @@ svg {
 
 body {
     font: 16px/1.5 "Lato", sans-serif;
-}
-
-/* Collapse */
-@media screen and (min-width: 768px) {
-    .collapsed .pageHeader {
-        width: 40px;
-    }
-
-    .collapsed .pageHeader .logo,
-    .collapsed .pageHeader .menu span,
-    .collapsed .pageHeader .menu .menuHeader {
-        display: none;
-    }
-
-    .collapsed .pageHeader .menu svg {
-        margin-right: 10px;
-    }
-
-    .collapsed .pageHeader .collapse svg {
-        transform: rotate(180deg);
-    }
-
-    .collapsed .pageContent {
-        left: 40px;
-        width: calc(100% - 40px);
-    }
 }
 
 /* Header 
@@ -159,12 +132,6 @@ body {
     background: var(--page-content-bgColor);
 }
 
-.background {
-    position: absolute;
-    width: calc(100% - 30px);
-    height: calc(100% - 110px);
-}
-
 /* Search Bar
 ------------------------------- */
 .searchAndUser {
@@ -240,8 +207,15 @@ body {
 
 /* Map
 ----------------- */
-.map {
-    height: 100%;
+#map {
+    width: 100%;
+}
+
+#background {
+    position: absolute;
+    width: calc(100% - 60px);
+    height: calc(100% - 110px);
+    overflow: hidden;
 }
 
 /* Date Display
@@ -259,8 +233,19 @@ body {
     display: flex;
     align-items: center;
     left: 15%;
+    color: var(--red);
 }
 
 .dateForwardButton {
     transform: rotate(180deg);
+}
+
+.date button {
+    border-width: 4px;
+    border-color: var(--red);
+    border-radius: var(--border-radius);
+    background-color: var(--red);
+    width: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
