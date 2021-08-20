@@ -2,6 +2,8 @@ const form = document.getElementById('query');
 const searchButton = document.getElementById('searchButton');
 
 const map = document.getElementById('map');
+const berlin = document.getElementById('berlin');
+const koniggratz = document.getElementById('koniggratz');
 
 const dateDisplay = document.getElementById('dateDisplay');
 

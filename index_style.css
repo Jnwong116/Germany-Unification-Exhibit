@@ -218,6 +218,54 @@ body {
     overflow: hidden;
 }
 
+#map_drag button:hover span {
+    display: block;
+}
+
+.berlin {
+    position: absolute;
+    top: 23%;
+    left: 53.75%;
+    z-index: 99;
+}
+
+.koniggratz {
+    position: absolute;
+    top: 44.5%;
+    left: 69.35%;
+    z-index: 99;
+}
+
+.preview {
+    background: var(--black);
+    border: 5px solid var(--gold);
+    color: #fff;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    top: -80px;
+    left: -30px;
+    display: none;
+}
+
+.preview:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 5px solid var(--gold);
+    border-right: 5px solid var(--gold);
+    background: var(--black);
+    left: 50%;
+    margin-left: -10px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
 /* Date Display
 -------------------------------- */
 .date svg {

@@ -4,10 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="index_style.css" rel="stylesheet" />
+        <link href="motlke_gun_doc_style.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
     </head>
     <body>
         <svg style="display: none;">
@@ -46,7 +44,7 @@
                         <h3>Sources</h3>
                     </li>
                     <li>
-                        <button onclick="location.href='moltke_gun_improvements/moltke_gun_doc.html';">
+                        <button onclick="location.href='/deviceState';">
                             <svg>
                                 <use xlink:href="#pages"></use>
                             </svg>
@@ -73,57 +71,12 @@
             </nav>
         </header>
         <section class="pageContent">
-            <section class="searchAndUser">
-                <div class="date">
-                    <button class="dateBackButton" onclick="dateChange('back')">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#collapse"></use>
-                        </svg>
-                    </button>
-                    <h3 id="dateDisplay">Temp</h3>
-                    <button class="dateForwardButton" onclick="dateChange('forward')">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#collapse"></use>
-                        </svg>
-                    <button>
-                </div>
+            <h1>April 1861: Memorandum on the Effect of Improvements in Firearms on Battlefield Tactics</h1>
 
-                <form autocomplete="off" onsubmit="return false">
-                    <div class="autocomplete">
-                        <input type="text" placeholder="Search for Date..." id="query" name="date">
-                        <button aria-label="submit form" onclick="requestXML()" id="searchButton">
-                            <svg aria-hidden="true">
-                                <use xlink:href="#search"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-            </section>
-            
-            <div id="background">
-                <div id="map_drag">
-                    <img src="German Map Before.svg"/ id="map">
-                    <button id="berlin" class="berlin">
-                        <svg>
-                            <use xlink:href="#map_pin"></use>
-                        </svg>
-                        <span class="preview">
-                            The preview text
-                        </span>
-                    </button>
-                    <button id="koniggratz" class="koniggratz">
-                        <svg>
-                            <use xlink:href="#map_pin"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+            <p>Some context and reasons why this document is important</p>
+
+            <iframe src="../sources/moltke_gun_improvements.pdf" width="75%" height="500px"></iframe>
 
         </section>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-        <script src="map_jquery.js"></script>
-
-        <script src="index_script.js"></script>
     </body>
 </html>

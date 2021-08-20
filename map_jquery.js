@@ -1,5 +1,5 @@
 $(document).ready( function() {
     jQuery(document).ready(function() {
-        jQuery("#map").draggable(); 
+        jQuery("#map_drag").draggable(); 
     });
 });
