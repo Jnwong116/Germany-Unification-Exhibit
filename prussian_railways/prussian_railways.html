@@ -4,10 +4,8 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="index_style.css" rel="stylesheet" />
+        <link href="motlke_gun_doc_style.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
     </head>
     <body>
         <svg style="display: none;">
@@ -72,7 +70,7 @@
                             <svg>
                                 <use xlink:href="#document"></use>
                             </svg>
-                            <span>April 1866: Memorandum on the Possible War between Prussia and Austria</span>
+                            <span style="font-weight: bold;">April 1866: Memorandum on the Possible War between Prussia and Austria</span>
                         </button>
                     </li>
                     <li>
@@ -80,7 +78,7 @@
                             <svg>
                                 <use xlink:href="#image"></use>
                             </svg>
-                            <span>Prussian Railways</span>
+                            <span style="font-weight: bold;">Prussian Railways</span>
                         </button>
                     </li>
                     <li>
@@ -152,121 +150,15 @@
             </nav>
         </header>
         <section class="pageContent">
-            <section class="searchAndUser">
-                <div class="date">
-                    <button class="dateBackButton" onclick="dateChange('back')">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#collapse"></use>
-                        </svg>
-                    </button>
-                    <h3 id="dateDisplay">Temp</h3>
-                    <button class="dateForwardButton" onclick="dateChange('forward')">
-                        <svg aria-hidden="true">
-                            <use xlink:href="#collapse"></use>
-                        </svg>
-                    <button>
-                </div>
+            <h1>April 1861: Memorandum on the Effect of Improvements in Firearms on Battlefield Tactics <br />
+                & <br />
+                The Needle Gun
+            </h1>
 
-                <form autocomplete="off" onsubmit="return false">
-                    <div class="autocomplete">
-                        <input type="text" placeholder="Search for Date..." id="query" name="date">
-                        <button aria-label="submit form" onclick="requestXML()" id="searchButton">
-                            <svg aria-hidden="true">
-                                <use xlink:href="#search"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </form>
-            </section>
-            
-            <div id="background">
-                <div id="map_drag">
-                    <img src="German Map Before.svg" id="map">
-                    <button id="berlin" class="berlin">
-                        <svg>
-                            <use xlink:href="#map_pin"></use>
-                        </svg>
-                        <span class="preview" id="berlin_preview">
-                            <img class="thumbnail">
-                            <p class="preview_text">
-                                Preview text
-                            </p>
-                        </span>
-                    </button>
-                    <button id="prague" class="prague">
-                        <svg>
-                            <use xlink:href="#map_pin"></use>
-                        </svg>
-                        <span class="preview" id="prague_preview">
-                            <img class="thumbnail">
-                            <p class="preview_text">
-                                Preview text
-                            </p>
-                        </span>
-                    </button>
-                    <button id="koniggratz" class="koniggratz">
-                        <svg>
-                            <use xlink:href="#map_pin"></use>
-                        </svg>
-                        <span class="preview" id="koniggratz_preview">
-                            <img class="thumbnail">
-                            <p class="preview_text">
-                                Preview text
-                            </p>
-                        </span>
-                    </button>
-                    <button id="anhalt" class="anhalt">
-                        <svg>
-                            <use xlink:href="#map_pin"></use>
-                        </svg>
-                        <span class="preview" id="anhalt_preview">
-                            <img class="thumbnail">
-                            <p class="preview_text">
-                                Preview text
-                            </p>
-                        </span>
-                    </button>
-                    <button id="france" class="france">
-                        <svg>
-                            <use xlink:href="#map_pin"></use>
-                        </svg>
-                        <span class="preview" id="france_preview">
-                            <img class="thumbnail">
-                            <p class="preview_text">
-                                Preview text
-                            </p>
-                        </span>
-                    </button>
-                    <button id="bavaria" class="bavaria">
-                        <svg>
-                            <use xlink:href="#map_pin"></use>
-                        </svg>
-                        <span class="preview" id="bavaria_preview">
-                            <img class="thumbnail">
-                            <p class="preview_text">
-                                Preview text
-                            </p>
-                        </span>
-                    </button>
-                    <button id="austria" class="austria">
-                        <svg>
-                            <use xlink:href="#map_pin"></use>
-                        </svg>
-                        <span class="preview" id="austria_preview">
-                            <img class="thumbnail">
-                            <p class="preview_text">
-                                Preview text
-                            </p>
-                        </span>
-                    </button>
-                </div>
-            </div>
+            <p>Some context and reasons why this document is important</p>
+
+            <iframe src="../sources/moltke_gun_improvements.pdf" width="75%" height="500px"></iframe>
 
         </section>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-        <script src="map_jquery.js"></script>
-
-        <script src="index_script.js"></script>
     </body>
 </html>

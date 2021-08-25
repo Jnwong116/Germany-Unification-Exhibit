@@ -119,6 +119,10 @@ body {
   font-size: 0.9rem;
 }
 
+.pageHeader .menu button span {
+    width: calc(100% - 30px);
+}
+
 
 /* Page Content 
 ------------------------------ */
@@ -218,6 +222,18 @@ body {
     overflow: hidden;
 }
 
+#background button {
+    width: 16px;
+    height: 24px;
+    z-index: 95;
+    display: none;
+}
+
+#background svg {
+    width: 24px;
+    height: 24px;
+}
+
 #map_drag button:hover span {
     display: block;
 }
@@ -226,14 +242,42 @@ body {
     position: absolute;
     top: 23%;
     left: 53.75%;
-    z-index: 99;
 }
 
 .koniggratz {
     position: absolute;
     top: 44.5%;
     left: 69.35%;
-    z-index: 99;
+}
+
+.prague {
+    position: absolute;
+    top: 46.5%;
+    left: 60.6%;
+}
+
+.anhalt {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+.france {
+    position: absolute;
+    top: 65%;
+    left: 3%;
+}
+
+.bavaria {
+    position: absolute;
+    top: 76%;
+    left: 38.25%;
+}
+
+.austria {
+    position: absolute;
+    top: 80%;
+    left: 55%;
 }
 
 .preview {
@@ -241,29 +285,45 @@ body {
     border: 5px solid var(--gold);
     color: #fff;
     height: 400px;
+    width: 300px;
     position: relative;
     text-align: center;
     top: -80px;
-    left: -30px;
+    left: 40px;
     display: none;
+    z-index: 99;
 }
 
 .preview:after {
     content: '';
     position: absolute;
-    bottom: -10px;
+    left: 0px;
+    bottom: 80%;
     width: 10px;
     height: 10px;
     border-bottom: 5px solid var(--gold);
     border-right: 5px solid var(--gold);
     background: var(--black);
-    left: 50%;
     margin-left: -10px;
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
+#map_drag span:hover {
+    display: block;
+}
+
+.thumbnail {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
+    margin-top: 15px;
+}
+
+.preview_text {
+    margin: 15px;
+}
 
 
 /* Date Display
