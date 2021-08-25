@@ -141,3 +141,25 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.pageContent .context {
+    width: 85%;
+    margin: auto;
+}
+
+.document1 {
+    position: relative;
+    left: 12.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.context2 {
+    width: 50%;
+}
+
+.document2 {
+    position: relative;
+    left: 50%;
+    top: -10%;
+}

@@ -260,7 +260,7 @@ function showPreview() {
             army and will remove the advantage of numbers.";
 
             berlin.onclick = function() {
-                location.href = '';
+                location.href = 'prussian_railways/prussian_railways.html';
             }
 
             berlin_preview.style.height = '500px';
@@ -273,7 +273,7 @@ function showPreview() {
             are going backwards down the waterfall of war. At the bottom of the waterfall there is a rock which is the united forces of Austrian nations. ";
 
             prague_preview.onclick = function() {
-                location.href = '';
+                location.href = 'austrian_propaganda/austrian_propaganda.html';
             }
 
             prague_preview.style.height = '450px';
@@ -287,7 +287,7 @@ function showPreview() {
             through reform, and the other side shows Bismarck covering his ears to chants demanding he resign.";
 
             berlin.onclick = function() {
-                location.href = '';
+                location.href = 'prussian_cartoon/prussian_cartoon.html';
             }
 
             berlin_preview.style.height = '450px';
@@ -300,7 +300,7 @@ function showPreview() {
             making their last stand.";
 
             koniggratz_preview.onclick = function() {
-                location.href = '';
+                location.href = 'battle_of_koniggratz/battle_of_koniggratz.html';
             }
 
             break;
@@ -312,7 +312,7 @@ function showPreview() {
             of Germany under Bismarck.";
 
             anhalt_preview.onclick = function() {
-                location.href = '';
+                location.href = 'bismarck_popular_prussia/bismarck_popular_prussia.html';
             }
 
 
@@ -326,7 +326,7 @@ function showPreview() {
             needle … But it’s a skill that should not be abused.”";
 
             france_preview.onclick = function() {
-                location.href = '';
+                location.href = 'french_cartoon/french_cartoon.html';
             }
 
 
@@ -340,7 +340,7 @@ function showPreview() {
             southern states. Sir Henry was the British envoy to Bavaria from 1866 to 1872.";
 
             bavaria_preview.onclick = function() {
-                location.href = '';
+                location.href = 'mood_in_bavarian_states/mood_in_bavaria.html';
             }
 
 
@@ -353,7 +353,7 @@ function showPreview() {
             the other Germans into the North German Confederation. The caption reads, “In the end, the South Germans, too, will join; we are obviously still too liberal for them!”";
 
             austria_preview.onclick = function() {
-                location.href = '';
+                location.href = 'south_german_cartoon/south_german_cartoon.html';
             }
 
 
