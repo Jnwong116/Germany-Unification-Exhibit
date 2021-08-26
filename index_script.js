@@ -272,7 +272,7 @@ function showPreview() {
             in the back?”. In the cartoon there are two boats, one is Prussia and the other is Italy. Prussia has Schleswig-Holstein in its boat and Italy has Venice. Both boats \
             are going backwards down the waterfall of war. At the bottom of the waterfall there is a rock which is the united forces of Austrian nations. ";
 
-            prague_preview.onclick = function() {
+            prague.onclick = function() {
                 location.href = 'austrian_propaganda/austrian_propaganda.html';
             }
 
@@ -299,7 +299,7 @@ function showPreview() {
             The image above depicts the battle between the Austrian and Prussian army. You can see the chaos of the battle and how the Austrian forces appear as though they are \
             making their last stand.";
 
-            koniggratz_preview.onclick = function() {
+            koniggratz.onclick = function() {
                 location.href = 'battle_of_koniggratz/battle_of_koniggratz.html';
             }
 
@@ -311,7 +311,7 @@ function showPreview() {
             war and how the people of Prussia had reacted to news of the battle. He speaks about the pain families feel after losing their children and his hopes for the future \
             of Germany under Bismarck.";
 
-            anhalt_preview.onclick = function() {
+            anhalt.onclick = function() {
                 location.href = 'bismarck_popular_prussia/bismarck_popular_prussia.html';
             }
 
@@ -325,7 +325,7 @@ function showPreview() {
             stitch together the defeated German states: Saxony, Hanover, Nassau, and Frankfurt; together with Prussia. The caption says: “It’s one thing to know how to use a \
             needle … But it’s a skill that should not be abused.”";
 
-            france_preview.onclick = function() {
+            france.onclick = function() {
                 location.href = 'french_cartoon/french_cartoon.html';
             }
 
@@ -339,7 +339,7 @@ function showPreview() {
             remained independent however. In December of 1866, Sir Henry Francis Howard wrote a report to the British Foreign Office on the mood in the annexed territories and \
             southern states. Sir Henry was the British envoy to Bavaria from 1866 to 1872.";
 
-            bavaria_preview.onclick = function() {
+            bavaria.onclick = function() {
                 location.href = 'mood_in_bavarian_states/mood_in_bavaria.html';
             }
 
@@ -352,7 +352,7 @@ function showPreview() {
             austria_preview.childNodes[3].innerHTML = "Two years after the war, in April 1868, this woodcut appeared in an Austrian journal Figaro. It shows Prussia whipping \
             the other Germans into the North German Confederation. The caption reads, “In the end, the South Germans, too, will join; we are obviously still too liberal for them!”";
 
-            austria_preview.onclick = function() {
+            austria.onclick = function() {
                 location.href = 'south_german_cartoon/south_german_cartoon.html';
             }
 
